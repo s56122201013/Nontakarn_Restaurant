@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nontakarn.Nontakarn_restaurant.MainActivity"
+    android:background="@drawable/wall16">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="201dp"
+            android:layout_height="148dp"
+            android:background="@drawable/unnamed"
+            android:id="@+id/imgloginlogo" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user"
+            android:hint="User"
+            android:textColorHint="@color/colorAccent" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:layout_below="@+id/user"
+            android:textColorHint="@color/colorAccent"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/imgsignup"
+            android:background="@drawable/signup55"
+            android:onClick="clickSignUpMain" />
+
+        <ImageButton
+            android:layout_width="165dp"
+            android:layout_height="60dp"
+            android:id="@+id/imglogin"
+            android:onClick="clickSignInMain"
+            android:focusable="false"
+            android:background="@drawable/login2" />
+    </LinearLayout>
+
+</RelativeLayout>
